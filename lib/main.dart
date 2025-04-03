@@ -21,6 +21,7 @@ Future<void> main() async {
 
 class MyApp extends StatelessWidget {
   final bool isUserLoggedIn;
+
   const MyApp({super.key, required this.isUserLoggedIn});
 
   @override
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Student App',
       debugShowCheckedModeBanner: false,
-        home: isUserLoggedIn ? HomeView() : LoginView()
+      home: isUserLoggedIn ? HomeView() : LoginView(),
     );
   }
 }
